@@ -56,7 +56,7 @@ public class PigLatin {
   else if(findFirstVowel(sWord) == 1 && sWord.substring(0,1) == "q"){
     return sWord.substring(2) + "quay"; 
   }
-  else
+  else if(
   return sWord.substring(1) + sWord.substring(0,1) + "ay";
 	    //else {
 		//return "ERROR!";

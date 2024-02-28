@@ -43,23 +43,25 @@ public class PigLatin {
     public String pigLatin(String sWord) {
 //precondition: sWord is a valid String of length greater than 0
 //postcondition: returns the pig latin equivalent of sWord
+int consequence = findFirstVowel(sWord);
+if(sWord.length()>0)
+	if(sWord.substring(0,2).equals("qu")){
+		return sWord.substring(2) + sWord.substring(0,2) + "ay";
+	}
+	    if(consequence>0){
+		return sWord.substring(h) + sWord.substring(0,2) + "ay";
+	    }
 {
   if(findFirstVowel(sWord) == -1)
   {
     return sWord + "ay";
   }
-  else if(findFirstVowel(sWord) == 0)
+  if(findFirstVowel(sWord) == 0)
   {
-    return sWord + "way";
-    //return "ERROR!";
+    return sWord.substring(h) + sWord.substring(0,h) + "way";
   }
-  else if(findFirstVowel(sWord) == 1 && sWord.substring(0,1) == "q"){
-    return sWord.substring(2) + "quay"; 
-  }
-  else if(
-  return sWord.substring(1) + sWord.substring(0,1) + "ay";
-	    //else {
-		//return "ERROR!";
-	 //   }
-    }
-}//end PigLatin class
+else
+    return "ERROR!";
+	}
+	}
+}

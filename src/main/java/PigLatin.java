@@ -58,7 +58,7 @@ if(sWord.length()>0)
   }
   if(findFirstVowel(sWord) == 0)
   {
-    return sWord.substring(h) + sWord.substring(0,h) + "way";
+    return sWord.substring(consequence) + sWord.substring(0,consequence) + "way";
   }
 else
     return "ERROR!";
